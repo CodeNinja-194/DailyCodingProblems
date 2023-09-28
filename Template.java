@@ -1,5 +1,9 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 public class Template {
     static PrintWriter out = new PrintWriter(System.out);
     public static void main(String args[]) throws IOException {
@@ -14,6 +18,13 @@ public class Template {
     public static void solve() {
         // To be solved...
         Reader sc = new Reader();
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        Arrays.sort(a);
         out.println();
     }
 
